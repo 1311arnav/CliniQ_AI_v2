@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Diagnosis | CliniQ AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="intelligent-diagnosis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">CliniQ AI</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features-section">Features</a>
+                <a href="#">Pricing</a>
+                <a href="index.html#about-section">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="user-menu">
+                <div class="user-info">
+                    <span id="userGreeting">Welcome</span>
+                    <a href="#" id="logoutBtn" class="btn btn-small">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-sidebar">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h2 id="username">User</h2>
+                    <p id="memberSince">Member since: Today</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Dashboard</a></li>
+                    <li class="active"><a href="intelligent-diagnosis.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg> Intelligent Diagnosis</a></li>
+                    <li><a href="medical-records.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg> Saved Medical Records</a></li>
+                    <li><a href="appointments.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.08V8l-6-6H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h6"></path><path d="M14 3v5h5M18 16.66h.01M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg> Appointments</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="dashboard-main">
+                <div class="welcome-section">
+                    <h1>Intelligent Diagnosis</h1>
+                    <p>Get AI-powered insights from your medical records</p>
+                </div>
+
+                <div class="diagnosis-container">
+                    <div class="diagnosis-intro">
+                        <div class="diagnosis-info">
+                            <h3>AI-Powered Medical Analysis</h3>
+                            <p>Upload your medical records or lab results for an AI-powered analysis using Gemini 2.0 Flash. Get insights, potential diagnoses, and recommendations based on your reports.</p>
+                            <div class="disclaimer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                                <p><strong>Important:</strong> This tool provides supplementary information only and is not a substitute for professional medical advice. Always consult with a healthcare provider for proper diagnosis and treatment.</p>
+                            </div>
+                        </div>
+                        <div class="diagnosis-image">
+                            <img src="https://placehold.co/400x300/e9f2fe/4361ee?text=AI+Diagnosis&font=Open+Sans" alt="AI Diagnosis Illustration">
+                        </div>
+                    </div>
+
+                    <div class="diagnosis-steps">
+                        <div class="step-indicators">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">Select Records</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">Add Context</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">View Results</div>
+                            </div>
+                        </div>
+
+                        <div class="diagnosis-step-content">
+                            <!-- Step 1: Select Records -->
+                            <div class="step-content active" id="step1">
+                                <h3>Select Medical Records for Analysis</h3>
+                                <p>Choose from your saved medical records or upload a new one:</p>
+                                
+                                <div class="record-selection">
+                                    <div class="selection-tabs">
+                                        <button class="tab-btn active" data-tab="saved-records">Saved Records</button>
+                                        <button class="tab-btn" data-tab="upload-new">Upload New</button>
+                                    </div>
+                                    
+                                    <div class="tab-content active" id="saved-records">
+                                        <div class="records-filter">
+                                            <select id="filterSavedRecords">
+                                                <option value="all">All Record Types</option>
+                                                <option value="lab_result">Lab Results</option>
+                                                <option value="radiology">Radiology/Imaging</option>
+                                                <option value="prescription">Prescriptions</option>
+                                                <option value="discharge">Discharge Summary</option>
+                                                <option value="consultation">Consultation Notes</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <input type="text" id="searchSavedRecords" placeholder="Search records...">
+                                        </div>
+                                        
+                                        <div class="saved-records-list" id="savedRecordsList">
+                                            <!-- Records will be populated here by JavaScript -->
+                                            <div class="loading-records">
+                                                <div class="spinner"></div>
+                                                <p>Loading your records...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab-content" id="upload-new">
+                                        <div class="upload-new-form">
+                                            <div class="file-upload-container">
+                                                <label for="newRecordFile" class="file-upload-label">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                                                    <span>Drop files here or click to upload</span>
+                                                    <small>Supported formats: PDF, JPG, PNG</small>
+                                                </label>
+                                                <input type="file" id="newRecordFile" accept=".pdf,.jpg,.jpeg,.png" hidden>
+                                            </div>
+                                            
+                                            <div class="upload-preview" id="uploadPreview" style="display:none;">
+                                                <div class="preview-header">
+                                                    <span id="fileName">File name</span>
+                                                    <button id="removeFile">Remove</button>
+                                                </div>
+                                                <div class="preview-content" id="previewContent"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="selected-records" id="selectedRecords">
+                                    <h4>Selected for Analysis (0)</h4>
+                                    <div class="selected-records-list" id="selectedRecordsList">
+                                        <!-- Selected records will be populated here -->
+                                        <div class="no-records-selected">No records selected yet</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-buttons">
+                                    <button class="next-step" id="toStep2" disabled>Continue to Add Context</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2: Add Context -->
+                            <div class="step-content" id="step2">
+                                <h3>Add Context for Better Analysis</h3>
+                                <p>Help the AI understand your medical situation better by providing additional information:</p>
+                                
+                                <div class="context-form">
+                                    <div class="form-group">
+                                        <label for="symptoms">Current Symptoms (if any)</label>
+                                        <textarea id="symptoms" placeholder="Describe any symptoms you're experiencing..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="medicalHistory">Relevant Medical History</label>
+                                        <textarea id="medicalHistory" placeholder="Any relevant past medical conditions or treatments..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="specificQuestions">Specific Questions for the AI</label>
+                                        <textarea id="specificQuestions" placeholder="Any specific questions about your results..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="medications">Current Medications</label>
+                                        <textarea id="medications" placeholder="List any medications you're currently taking..."></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-buttons">
+                                    <button class="prev-step" id="backToStep1">Back</button>
+                                    <button class="next-step" id="toStep3">Get AI Analysis</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3: View Results -->
+                            <div class="step-content" id="step3">
+                                <div class="analysis-loading" id="analysisLoading">
+                                    <div class="loading-animation">
+                                        <div class="spinner"></div>
+                                        <div class="pulse-rings">
+                                            <div class="ring"></div>
+                                            <div class="ring"></div>
+                                            <div class="ring"></div>
+                                        </div>
+                                    </div>
+                                    <h3>Analyzing Your Medical Records</h3>
+                                    <p>Gemini 2.0 Flash is processing your records and generating insights. This may take a moment...</p>
+                                </div>
+                                
+                                <div class="analysis-results" id="analysisResults" style="display:none;">
+                                    <h3>AI Analysis Results</h3>
+                                    
+                                    <div class="results-summary">
+                                        <div class="summary-header">
+                                            <h4>Summary</h4>
+                                            <span class="ai-badge">Gemini 2.0 Flash</span>
+                                        </div>
+                                        <div id="resultsSummary" class="summary-content"></div>
+                                    </div>
+                                    
+                                    <div class="results-details">
+                                        <div class="results-section">
+                                            <h4>Key Findings</h4>
+                                            <div id="keyFindings"></div>
+                                        </div>
+                                        
+                                        <div class="results-section">
+                                            <h4>Potential Health Indicators</h4>
+                                            <div id="healthIndicators"></div>
+                                        </div>
+                                        
+                                        <div class="results-section">
+                                            <h4>Recommendations</h4>
+                                            <div id="recommendations"></div>
+                                        </div>
+                                        
+                                        <div class="results-section">
+                                            <h4>Answers to Your Questions</h4>
+                                            <div id="questionAnswers"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="disclaimer-box">
+                                        <p><strong>Important:</strong> This analysis is generated by AI and is not a substitute for professional medical advice. Always consult with your healthcare provider before making any medical decisions.</p>
+                                    </div>
+                                    
+                                    <div class="results-actions">
+                                        <button id="saveAnalysisBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                                            Save Analysis
+                                        </button>
+                                        <button id="printAnalysisBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                                            Print Analysis
+                                        </button>
+                                        <button id="shareWithDoctorBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                            Share with Doctor
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-buttons" id="restartAnalysis" style="display:none;">
+                                    <button class="restart-btn" id="restartBtn">Start New Analysis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>CliniQ AI</h2>
+                <p>Intelligent healthcare solutions</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">News</a>
+                </div>
+                <div class="link-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="link-column">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CliniQ AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="intelligent-diagnosis.js"></script>
+</body>
+</html> 

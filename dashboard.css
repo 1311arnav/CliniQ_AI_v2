@@ -1,0 +1,330 @@
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+/* Sidebar Styles */
+.dashboard-sidebar {
+    width: 280px;
+    background-color: var(--background-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 1.5rem;
+    flex-shrink: 0;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e1e5ee;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.avatar svg {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+}
+
+.user-profile h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.user-profile p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.8rem;
+}
+
+.sidebar-menu a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.sidebar-menu li.active a {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.sidebar-menu li.active svg {
+    color: white;
+}
+
+/* Main Content Styles */
+.dashboard-main {
+    flex: 1;
+}
+
+.welcome-section {
+    background-color: var(--background-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.welcome-section p {
+    color: var(--text-light);
+}
+
+/* Stats Cards */
+.dashboard-stats {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: var(--background-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 2rem;
+}
+
+.stat-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.stat-card-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.stat-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+}
+
+.stat-info h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.stat-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+}
+
+.stat-trend {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.stat-trend.positive {
+    color: #4ade80;
+}
+
+.stat-trend.negative {
+    color: #f87171;
+}
+
+.appointment-link {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.appointment-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* User Details Section */
+.user-details-section {
+    background-color: var(--background-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.user-details-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.user-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-details-table tr {
+    border-bottom: 1px solid #e1e5ee;
+}
+
+.user-details-table tr:last-child {
+    border-bottom: none;
+}
+
+.user-details-table td {
+    padding: 1rem 0;
+}
+
+.user-details-table td:first-child {
+    width: 40%;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.user-details-table td:last-child {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Health Plan */
+.dashboard-upcoming {
+    background-color: var(--background-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow);
+    padding: 2rem;
+}
+
+.dashboard-upcoming h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.health-plan-card {
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.plan-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.plan-details p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.plan-features {
+    list-style: none;
+}
+
+.plan-features li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+}
+
+.plan-features li:before {
+    content: "✓";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Navbar user menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#userGreeting {
+    font-weight: 500;
+}
+
+.btn-small {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+} 

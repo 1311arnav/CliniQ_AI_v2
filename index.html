@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CliniQ AI | Intelligent Healthcare Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>CliniQ AI</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#features-section">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#about-section">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="cta-button" id="auth-buttons">
+                <a href="login.html" class="btn" id="get-started-btn">Get Started</a>
+                <a href="dashboard.html" class="btn btn-dashboard" id="dashboard-btn" style="display: none;">Go to Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transforming Healthcare with AI</h1>
+                <p>CliniQ AI delivers intelligent solutions that empower healthcare professionals to provide better patient care.</p>
+                <div class="hero-buttons">
+                    <a href="login.html" class="btn btn-primary" id="hero-get-started-btn">Get Started</a>
+                    <a href="dashboard.html" class="btn btn-primary" id="hero-dashboard-btn" style="display: none;">Go to Dashboard</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600" alt="Medical AI Technology">
+            </div>
+        </section>
+
+        <section class="features" id="features-section">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+                    </div>
+                    <h3>Intelligent Diagnosis</h3>
+                    <p>Advanced AI algorithms to assist with accurate and timely diagnosis.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 14h.01"></path><path d="M12 14h.01"></path><path d="M15 14h.01"></path><path d="M9 17h.01"></path><path d="M12 17h.01"></path><path d="M15 17h.01"></path></svg>
+                    </div>
+                    <h3>Smart Medical Records</h3>
+                    <p>Seamless integration and management of patient data for better healthcare outcomes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Harness the power of data to predict health trends and improve patient care.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about-section">
+            <div class="about-content">
+                <h2>Why Choose CliniQ AI?</h2>
+                <p>CliniQ AI combines cutting-edge artificial intelligence with deep healthcare expertise to deliver solutions that matter. Our platform is designed by doctors and engineers to address real clinical challenges.</p>
+                <ul class="benefits">
+                    <li>Reduce administrative burden</li>
+                    <li>Improve diagnostic accuracy</li>
+                    <li>Enhance patient outcomes</li>
+                    <li>Streamline clinical workflows</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&auto=format&fit=crop&w=600" alt="Healthcare Professionals">
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>This is what our users say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-track">
+                    <!-- First set of testimonials -->
+                    <div class="testimonial">
+                        <p>"CliniQ AI has transformed how we manage patient data and make clinical decisions. It's an indispensable tool in our practice."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Sarah Johnson</strong></p>
+                            <p>Chief Medical Officer, City General Hospital</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The diagnostic accuracy has improved by 35% since we implemented CliniQ AI. Our patients receive better care thanks to this technology."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Michael Chen</strong></p>
+                            <p>Neurologist, Metro Medical Center</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"What impressed me most was how intuitive the platform is. Our staff required minimal training and saw immediate benefits."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Jennifer Miller</strong></p>
+                            <p>Healthcare Administrator, Riverside Clinic</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"CliniQ AI has reduced our administrative workload by 40%, allowing us to focus more on patient care rather than paperwork."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Robert Williams</strong></p>
+                            <p>Director, Family Health Partners</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate testimonials for infinite scroll effect -->
+                    <div class="testimonial">
+                        <p>"CliniQ AI has transformed how we manage patient data and make clinical decisions. It's an indispensable tool in our practice."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Sarah Johnson</strong></p>
+                            <p>Chief Medical Officer, City General Hospital</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The diagnostic accuracy has improved by 35% since we implemented CliniQ AI. Our patients receive better care thanks to this technology."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Michael Chen</strong></p>
+                            <p>Neurologist, Metro Medical Center</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"What impressed me most was how intuitive the platform is. Our staff required minimal training and saw immediate benefits."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Jennifer Miller</strong></p>
+                            <p>Healthcare Administrator, Riverside Clinic</p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"CliniQ AI has reduced our administrative workload by 40%, allowing us to focus more on patient care rather than paperwork."</p>
+                        <div class="testimonial-author">
+                            <p><strong>Dr. Robert Williams</strong></p>
+                            <p>Director, Family Health Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Transform Your Healthcare Practice?</h2>
+            <p>Join thousands of healthcare professionals already using CliniQ AI.</p>
+            <a href="login.html" class="btn btn-primary" id="cta-get-started-btn">Get Started Today</a>
+            <a href="dashboard.html" class="btn btn-primary" id="cta-dashboard-btn" style="display: none;">Go to Dashboard</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>CliniQ AI</h2>
+                <p>Intelligent healthcare solutions</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">News</a>
+                </div>
+                <div class="link-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="link-column">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CliniQ AI. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html> 

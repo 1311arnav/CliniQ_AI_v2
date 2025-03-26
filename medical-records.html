@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records | CliniQ AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="medical-records.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">CliniQ AI</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features-section">Features</a>
+                <a href="#">Pricing</a>
+                <a href="index.html#about-section">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="user-menu">
+                <div class="user-info">
+                    <span id="userGreeting">Welcome</span>
+                    <a href="#" id="logoutBtn" class="btn btn-small">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboard-sidebar">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h2 id="username">User</h2>
+                    <p id="memberSince">Member since: Today</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Dashboard</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg> Intelligent Diagnosis</a></li>
+                    <li class="active"><a href="medical-records.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg> Saved Medical Records</a></li>
+                    <li><a href="appointments.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.08V8l-6-6H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h6"></path><path d="M14 3v5h5M18 16.66h.01M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg> Appointments</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="dashboard-main">
+                <div class="welcome-section">
+                    <h1>Saved Medical Records</h1>
+                    <p>Store and manage your medical records from past appointments</p>
+                </div>
+
+                <div class="records-actions">
+                    <button id="uploadRecordBtn" class="btn btn-primary">+ Upload New Record</button>
+                </div>
+
+                <div id="recordFormContainer" class="record-form-container" style="display: none;">
+                    <div class="record-form-card">
+                        <h2>Upload Medical Record</h2>
+                        <form id="recordForm">
+                            <input type="hidden" id="recordId" value="">
+                            
+                            <div class="form-group">
+                                <label for="recordTitle">Record Title</label>
+                                <input type="text" id="recordTitle" name="recordTitle" placeholder="e.g., Blood Test Results" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordDate">Date of Record</label>
+                                <input type="date" id="recordDate" name="recordDate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordDoctor">Doctor Name</label>
+                                <input type="text" id="recordDoctor" name="recordDoctor" placeholder="e.g., Dr. Smith" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordType">Record Type</label>
+                                <select id="recordType" name="recordType" required>
+                                    <option value="">Select a type</option>
+                                    <option value="lab_result">Lab Result</option>
+                                    <option value="prescription">Prescription</option>
+                                    <option value="radiology">Radiology/Imaging</option>
+                                    <option value="discharge">Discharge Summary</option>
+                                    <option value="consultation">Consultation Note</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordFile">Upload File (PDF or Image)</label>
+                                <input type="file" id="recordFile" name="recordFile" accept=".pdf,.jpg,.jpeg,.png" required>
+                                <p class="file-help">Maximum file size: 10MB. Accepted formats: PDF, JPG, PNG</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="relatedAppointment">Related Appointment (Optional)</label>
+                                <select id="relatedAppointment" name="relatedAppointment">
+                                    <option value="">Select an appointment</option>
+                                    <!-- Appointments will be populated by JavaScript -->
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordNotes">Notes (Optional)</label>
+                                <textarea id="recordNotes" name="recordNotes" rows="3" placeholder="Add any additional notes about this record"></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" id="cancelRecordBtn" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Save Record</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="records-filter-container">
+                    <div class="records-filter">
+                        <label for="filterRecords">Filter by Type:</label>
+                        <select id="filterRecords">
+                            <option value="all">All Records</option>
+                            <option value="lab_result">Lab Results</option>
+                            <option value="prescription">Prescriptions</option>
+                            <option value="radiology">Radiology/Imaging</option>
+                            <option value="discharge">Discharge Summaries</option>
+                            <option value="consultation">Consultation Notes</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="records-search">
+                        <input type="text" id="searchRecords" placeholder="Search records...">
+                    </div>
+                </div>
+
+                <div class="records-list-container">
+                    <h2>Your Medical Records</h2>
+                    <div id="recordsList" class="records-list">
+                        <!-- Records will be populated here by JavaScript -->
+                        <div class="no-records-message">
+                            <p>You don't have any medical records saved yet. Click "Upload New Record" to add one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>CliniQ AI</h2>
+                <p>Intelligent healthcare solutions</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">News</a>
+                </div>
+                <div class="link-column">
+                    <h3>Resources</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="link-column">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">HIPAA Compliance</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CliniQ AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="medical-records.js"></script>
+</body>
+</html> 
