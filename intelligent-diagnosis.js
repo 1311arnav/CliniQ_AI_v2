@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize variables
     let selectedRecords = [];
     let temporaryUploadedFile = null;
-    const API_KEY = 'AIzaSyDyKGtOGtWlrt__O0oqX_tHtRImKjGB5yY'; // This would be secured in a real implementation
+    const API_KEY = '[Your API Key here]'; // This would be secured in a real implementation
     
     // Get DOM elements
     const tabButtons = document.querySelectorAll('.tab-btn');
