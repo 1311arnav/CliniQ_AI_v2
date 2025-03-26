@@ -62,7 +62,10 @@ A modern web-based healthcare management solution that empowers patients to mana
 
 2. Open the project in your preferred code editor
 
-3. Launch the application by opening `Index.html` in a web browser
+3. Make sure to replace API key to your api key of Gemini-2.0-Flash model 
+   It is located in the 'intelligent-diagnosis.js'
+
+4. Launch the application by opening `Index.html` in a web browser
 
 ## Usage
 
